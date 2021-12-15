@@ -1,0 +1,7 @@
+SELECT imie, nazwisko FROM pracownik ORDER BY nazwisko ASC;
+SELECT imie, nazwisko, pensja FROM pracownik WHERE data_urodzenia > 1979;
+SELECT * FROM pracownik WHERE pensja BETWEEN 3500 and 5000;
+SELECT towar from stan_magazynowy where ilosc > 10;
+SELECT id_towaru from towar WHERE nazwa_towaru LIKE ('A%', 'B%', 'C%');
+SELECT id_klienta from klient WHERE czy_firma = "nie";
+SELECT id_zamowienia from zamowienie order by data_zamowienia ASC LIMIT 5;
